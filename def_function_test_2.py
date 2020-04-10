@@ -1,10 +1,17 @@
+import sys
+
 def multiply(userinput):
     try:
         userinput = int(userinput)
     except ValueError:
-        print("Type a number you dumbass...")
+        try: 
+            userinput = float(userinput)
+        except ValueError:
+            sys.exit("Mission Failed")
+        else:
+            return userinput * 3, userinput * 5, userinput * 10
     else:
-        print(userinput * 3, userinput * 5, userinput * 10)
+        return userinput * 3, userinput * 5, userinput * 10
 
 userinput = input("Choose any number to be multiplied by 3, 5 and 10:    ")
-multiply(userinput)
+print("Your results are: {}".format(multiply(userinput)))
