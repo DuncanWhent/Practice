@@ -7,7 +7,7 @@ def multiply(userinput):
         try: 
             userinput = float(userinput)
         except ValueError:
-            sys.exit("Mission Failed")
+            sys.exit("Please enter a number.")
         else:
             return userinput * 3, userinput * 5, userinput * 10
     else:
