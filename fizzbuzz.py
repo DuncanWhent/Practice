@@ -26,4 +26,4 @@ elif(is_buzz):
 
 # If user number is divisible by neither 3 nor 5, then print string.
 else:
-    print(number, "is neither a fizzy or a buzzy number.")
+    print(number, "is neither a fizzy nor a buzzy number.")
