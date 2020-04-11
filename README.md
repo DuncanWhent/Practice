@@ -2,6 +2,7 @@
 Personal Readme for practice history
 
 Python:
+
 09/04/2020  					- fizzbuzz challenge at teamtreehouse
 
 10/04/2020						- function defining test + loop testing
