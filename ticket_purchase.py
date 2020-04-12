@@ -7,17 +7,15 @@ SERVICE_CHARGE = 2
 tickets_remaining = 100
 attempts = 0
 
-# Function for calculating to total price of the purchase with the added service charge.
 def total_price():
-    total_price = math.ceil((num_tickets * TICKET_PRICE) + SERVICE_CHARGE)
-    return total_price
+    return math.ceil((num_tickets * TICKET_PRICE) + SERVICE_CHARGE)
 
 while tickets_remaining:
     print("There are {} tickets remaining!".format(tickets_remaining))
     user_name = input("Welcome, please enter your name below. \n")
     try:
         num_tickets = int(input("Hello {}, how many tickets would you like to purchase? \n".format(user_name)))
-    except ValueError:
+    except ValueError as tickets_err:
         print("ERROR: Please enter a valid number.\n")
         continue
     else:
