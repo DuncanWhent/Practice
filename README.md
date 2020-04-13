@@ -8,3 +8,5 @@ Python:
 10/04/2020						- function defining test + loop testing
 
 11/04/2020						- first iteration of ticket purchasing app to test basic knowledge
+
+12/04/2020						- ticket app refactored for spare change + first look at lists
